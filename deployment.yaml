@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ref-app-deployment
+  labels:
+    app: ref-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ref-app
+  template:
+    metadata:
+      labels:
+        app: ref-app
+    spec:
+      containers:
+      - name: ref-app
+        image: ref-app:1.0
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 9000
+        - containerPort: 9001

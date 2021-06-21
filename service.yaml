@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ref-app-service
+spec:
+  type: NodePort
+  selector:
+     app: ref-app
+  ports:
+    nodePort: 9000
+    port: 9000
+    targetPort: 9000
+ 
