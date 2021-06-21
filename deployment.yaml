@@ -17,7 +17,6 @@ spec:
       containers:
       - name: ref-app
         image: ref-app:1.0
-        imagePullPolicy: Never
         ports:
           - containerPort: 9000
           - containerPort: 9001
