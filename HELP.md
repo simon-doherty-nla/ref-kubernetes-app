@@ -14,3 +14,13 @@ Docker cluster (minikube locally) to run an image locally that you have not uplo
 3) docker build -t ref-app:1.0 .
 4) kubectl apply -f deployment.yaml
 5) minikube dashboard
+
+Setup a local container registry
+1) https://shashanksrivastava.medium.com/create-a-local-docker-registry-on-mac-74cbeac86bfc
+2) sudo docker compose up
+
+
+Install rancher on Mac
+1) https://itnext.io/rancher-2-4-kubernetes-on-your-macos-laptop-with-docker-k3d-b578b1c7568b
+
+Provision multiple k3s clusters with k3d

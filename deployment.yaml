@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ref-app-deployment
+  namespace: 
   labels:
     app: ref-app
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ref-app
-        image: ref-app:1.0
+        image: simonnla/ref-app:1.0
         ports:
           - containerPort: 9000
           - containerPort: 9001
