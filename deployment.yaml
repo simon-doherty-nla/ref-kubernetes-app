@@ -6,7 +6,7 @@ metadata:
   labels:
     app: ref-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ref-app
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ref-app
-        image: simonnla/ref-app:1.2
+        image: simonnla/ref-app:1.1
         ports:
           - containerPort: 9000
           - containerPort: 9001
