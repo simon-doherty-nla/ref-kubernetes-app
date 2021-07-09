@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ref-app
-        image: simonnla/ref-app:1.1
+        image: simonnla/ref-app:1.2
         ports:
           - containerPort: 9000
           - containerPort: 9001
